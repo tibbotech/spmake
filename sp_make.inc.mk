@@ -2,7 +2,7 @@
 #D0=${TMPDIR}/deploy/images/${MACHINE}/
 #D1=${TMPDIR}/deploy/images/${MACHINE}-arm5/
 D0=.
-D1=../tppg2-arm5
+D1?=../tppg2-arm5
 PATH := ${D0}/sp_tools/:$(PATH)
 
 OUTD=sp_out
