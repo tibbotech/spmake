@@ -90,7 +90,7 @@ ${D0}/${OUTD}/ISPBOOOT.BIN: ${D1}/${F_XBT}.img ${D0}/${OUTD}/nonos ${D0}/${OUTD}
 	${D0}/${OUTD}/nonos 0x100000 \
 	${D0}/${OUTD}/dtb 0x40000 \
 	${D0}/${OUTD}/kernel 0x2000000 \
-	${D0}/${OUTD}/rootfs 0x1E000000
+	${D0}/${OUTD}/rootfs 0x40000000
 	
 # temporary disabled
 #	install -d ${D0}/${OUTD}/boot2linux_SDC
