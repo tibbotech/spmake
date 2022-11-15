@@ -21,10 +21,12 @@ ifeq ("","$(wildcard ${D0}/${F_UBT})")
 endif
 ifeq ("","$(wildcard ${D1}/${F_NON}.bin)")
 	@echo "Downloading ${D1}/${F_NON}.bin"
+	install -d ${D1}
 	wget https://tibbo.com/downloads/LTPS/FW/LTPPg2/parts/${F_NON}.bin -O ${D1}/${F_NON}.bin || exit 1
 endif
 ifeq ("","$(wildcard ${D1}/${F_XBT}.bin)")
 	@echo "Downloading ${D1}/${F_XBT}.bin"
+	install -d ${D1}
 	wget https://tibbo.com/downloads/LTPS/FW/LTPPg2/parts/${F_XBT}.bin -O ${D1}/${F_XBT}.bin || exit 1
 endif
 
